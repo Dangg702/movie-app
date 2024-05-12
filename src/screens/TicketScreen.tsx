@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import {Text, View, StyleSheet} from 'react-native';
 
-const ticketScreen = () => {
+const TicketScreen = () => {
   return (
     <View style={styles.container}>
       <Text>ticketScreen</Text>
@@ -10,7 +10,7 @@ const ticketScreen = () => {
 };
 
 const styles = StyleSheet.create({
-    container: {}
+  container: {},
 });
 
-export default ticketScreen;
+export default TicketScreen;
