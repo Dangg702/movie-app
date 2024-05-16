@@ -26,6 +26,7 @@ const {width, height} = Dimensions.get('window');
 
 const getNowPlayingMoviesList = async () => {
   try {
+    console.log(nowPlayingMovies);
     let response = await fetch(nowPlayingMovies);
     let json = await response.json();
     return json;
