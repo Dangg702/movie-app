@@ -126,7 +126,7 @@ const SeatBookingScreen = ({navigation, route}: any) => {
           }),
         );
       } catch (error) {
-        console.log(
+        console.error(
           'Something when wrong while storing in BookSeats Functions ',
           error,
         );

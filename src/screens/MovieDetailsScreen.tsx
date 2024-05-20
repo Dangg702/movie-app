@@ -106,7 +106,7 @@ const MovieDetailsScreen = ({navigation, route}: any) => {
             <View style={styles.appHeaderContainer}>
               <AppHeader
                 name="close"
-                header={''}
+                header={movieData?.original_title}
                 action={() => navigation.goBack()}
               />
             </View>
