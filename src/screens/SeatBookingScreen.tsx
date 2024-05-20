@@ -127,16 +127,16 @@ const SeatBookingScreen = ({navigation, route}: any) => {
         );
       } catch (error) {
         console.error(
-          'Something when wrong while storing in BookSeats Functions ',
+          'Something went Wrong while storing in BookSeats Functions',
           error,
         );
-        navigation.navigate('Ticket', {
-          seatArray: selectedSeatArray,
-          time: timeArray[selectedTimeIndex],
-          date: dateArray[selectedDateIndex],
-          ticketImage: route.params.PosterImage,
-        });
       }
+      navigation.navigate('Ticket', {
+        seatArray: selectedSeatArray,
+        time: timeArray[selectedTimeIndex],
+        date: dateArray[selectedDateIndex],
+        ticketImage: route.params.PosterImage,
+      });
     } else {
       ToastAndroid.showWithGravity(
         'Please Select Seats, Date and Time of the Show',
